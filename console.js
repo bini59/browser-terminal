@@ -22,7 +22,7 @@ const log_result = (input, result, err=false) => {
     input_div.setAttribute("class", "console-input-div");
     input_div.innerHTML = `
         <span class="term-arrow" readonly="true">➜</span> <span class="term-tilde">~</span> 
-        <div id="console-input" style="color:${(err ? "#ff625e" : "#05ba25")};font-weight:bold;">${input}</br></div>
+        <div style="color:${(err ? "#ff625e" : "#05ba25")};font-weight:bold;">${input}</br></div>
     `
 
     let log = document.createElement("div");
