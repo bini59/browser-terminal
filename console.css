@@ -1,0 +1,52 @@
+.console {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 6px);
+  height: 100%;
+  background-color: #000;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 3px;
+  color: #fff;
+}
+.console .term-arrow {
+  color: #55f95d;
+  margin-right: 10px;
+}
+.console .term-tilde {
+  color: #54f9fb;
+  margin-right: 10px;
+}
+.console .term-caret {
+  height: 17px;
+  width: 6px;
+  display: inline-block;
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  position: relative;
+  transition: none;
+  animation: blink 0.8s linear infinite alternate;
+}
+.console .console-input, .console .console-input-div, .console .console-result-div {
+  display: flex;
+  flex-direction: row;
+}
+.console .console-log {
+  display: flex;
+  flex-direction: column;
+}
+.console #console-input {
+  color: #fff;
+  caret-color: #000;
+}
+.console #console-input:focus {
+  outline: none;
+}
+@keyframes blink {
+  from, 49% {
+    opacity: 1;
+ }
+  50%, to {
+    opacity: 0;
+ }
+}

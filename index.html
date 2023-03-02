@@ -1,12 +1,35 @@
-<div class="console shell">
-    <div class="console console-res">
+<link rel="stylesheet" href="./console.css" />
+<link rel="stylesheet" href="./window.css" />
 
+<div class="window">
+    <div class="winhead">
+        <div class="button">
+        <div class="close"></div>
+        <div class="min"></div>
+        <div class="max"></div>      
+        </div>
+        <div class="title">bini59@macbook-pro: ~ (blog)</div>
     </div>
-    <div class="console input">
-        <span class="console icon"></span>
-        <input id="console-input"/>
-        <span class="console time"></span>
+    <div class="winbody">
+        <div class="console">
+            <div class="console-res">
+        
+            </div>
+            <div class="console-input" contenteditable="false">
+                <span class="term-arrow" readonly="true">➜</span> <span class="term-tilde">~</span> 
+                <div id="console-input" contenteditable="true"></div>
+                <span class="term-caret" contenteditable="false"></span>
+            </div>
+        </div>
     </div>
 </div>
 
-<script src="./index.js"></script>
+
+
+
+<style>
+    body{
+        background-color: #707070;
+    }
+</style>
+<script src="./console.js"></script>

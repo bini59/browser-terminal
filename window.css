@@ -1,0 +1,84 @@
+.window {
+    margin: 100px auto;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rbga(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .window .winhead {
+    height: 30px;
+    background: #f4f4f4;
+    border-bottom: 0.5px solid rgba(162, 163, 164, 0.4);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .window .winhead .button {
+    display: flex;
+    align-items: center;
+    z-index: 9;
+  }
+  .window .winhead .button div {
+    width: 12px;
+    height: 12px;
+    margin-left: 6px;
+    background: #c7c7c7;
+    border: 0.5px solid darkgray;
+    border-radius: 50%;
+  }
+  .window .winhead .button:hover {
+    cursor: pointer;
+  }
+  .window .winhead .button:active {
+    cursor: pointer;
+  }
+  .window .winhead .button .close {
+    background: #e74546;
+    border: 0.5px solid #d04343;
+  }
+  .window .winhead .button .close:hover {
+    background: #c23a3a;
+    border: 0.5px solid #b53939;
+  }
+  .window .winhead .button .close:active {
+    background: #a83232;
+    border: 0.5px solid #962f2f;
+  }
+  .window .winhead .button .min {
+    background: #f6b427;
+    border: 0.5px solid #d49a3a;
+  }
+  .window .winhead .button .min:hover {
+    background: #dda222;
+    border: 0.5px solid #c48d35;
+  }
+  .window .winhead .button .min:active {
+    background: #c18d1d;
+    border: 0.5px solid #aa7a2d;
+  }
+  .window .winhead .button .max {
+    background: #56ca35;
+  }
+  .window .winhead .button .max:hover {
+    background: #49af2d;
+  }
+  .window .winhead .button .max:active {
+    background: #3a8a24;
+  }
+  .window .winhead .title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+  }
+  .window .winbody {
+    height: 90%;
+    background: #e7e7e7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+  }
