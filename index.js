@@ -35,13 +35,17 @@ const log_result = (input, result) => {
     shell.appendChild(log)
 }
 
+const clear_shell = () => {
+    document.getElementsByClassName("console-res")[0].innerHTML = ""
+}
+
 let console_input = document.getElementById("console-input");
 console_input.addEventListener("keypress", (e) => {
     if (e.key != "Enter") return;
 
     let text = e.target.value;
     if (text == "") return;
-    if (text == "clear") return;
+    if (text == "clear") { clear_shell(); e.target.value = ""; return; }
     let result = run_code(text);
     log_result(text, result);
     e.target.value = ""
