@@ -6,7 +6,7 @@ console.log = (...args) => {
 
 
 const run_code = (code) => {
-    try { return new Function(code)(); }
+    try {return new Function("return "+ code)();}
     catch (e) { return e; }
 }
 
@@ -28,8 +28,8 @@ const log_result = (input, result) => {
 
     let log = document.createElement("div");
     log.setAttribute("class", "console log");
-    log.appendChild(result_div);
     log.appendChild(input_div);
+    log.appendChild(result_div);
 
     let shell = document.getElementsByClassName("console-res")[0];
     shell.appendChild(log)
