@@ -1,4 +1,6 @@
 # browser-terminal
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbini59%2Fbrowser-terminal&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 
 브라우저에서 쓸 수 있는 브라우저 콘솔을 terminal의 형태로 사용할 수 있습니다.
 다만, 변수선언은 할 수 없습니다.
